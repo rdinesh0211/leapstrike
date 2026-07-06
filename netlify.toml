@@ -1,0 +1,25 @@
+# Netlify configuration for LeapStrike (static site, prebuilt CSS)
+
+[build]
+  # Serve the repo root as-is. CSS is already compiled and committed,
+  # so there is no build step to run.
+  publish = "."
+  command = ""
+
+# Clean URLs (/membership instead of /membership.html) and a branded 404.html
+# are handled automatically by Netlify's default "Pretty URLs" post-processing.
+
+# --- Caching -------------------------------------------------------------
+# The self-hosted fonts never change, so cache them hard for a year.
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# --- Security headers (applied to every response) ------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

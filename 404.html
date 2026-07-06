@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — LeapStrike Badminton Club</title>
+  <meta name="description" content="That page is out of bounds. Head back to the LeapStrike home court." />
+
+  <!-- Self-hosted Tailwind build + fonts (no external CDNs) -->
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+
+<body class="font-sans grain">
+
+  <!-- ============ NAV ============ -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-50 scrolled">
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="assets/logo.png" alt="LeapStrike logo" class="h-11 w-11 object-contain drop-shadow" />
+        <span class="text-white font-display text-2xl tracking-wide">LEAPSTRIKE</span>
+      </a>
+      <div class="hidden lg:flex items-center gap-9 text-[0.95rem] font-semibold text-white/85">
+        <a href="membership.html" class="hover:text-mint transition-colors">Membership</a>
+        <a href="training.html" class="hover:text-mint transition-colors">Training</a>
+        <a href="facilities.html" class="hover:text-mint transition-colors">Facilities</a>
+        <a href="schedule.html" class="hover:text-mint transition-colors">Schedule</a>
+        <a href="faq.html" class="hover:text-mint transition-colors">FAQ</a>
+        <a href="contact.html" class="hover:text-mint transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="membership.html" class="btn btn-primary hidden sm:inline-flex !py-3 !px-6 text-sm">Join now</a>
+        <button id="menuBtn" aria-label="Open menu" class="lg:hidden text-white p-2">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="lg:hidden hidden bg-teal-900/95 backdrop-blur-md">
+      <div class="px-6 py-6 flex flex-col gap-4 text-white text-lg font-semibold">
+        <a href="membership.html" class="mobile-link">Membership</a>
+        <a href="training.html" class="mobile-link">Training</a>
+        <a href="facilities.html" class="mobile-link">Facilities</a>
+        <a href="schedule.html" class="mobile-link">Schedule</a>
+        <a href="faq.html" class="mobile-link">FAQ</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="membership.html" class="mobile-link btn btn-primary mt-2 justify-center">Join now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ 404 ============ -->
+  <section class="relative min-h-[100svh] bg-teal-900 text-white flex items-center overflow-hidden">
+    <div class="absolute inset-0 opacity-60" style="background:radial-gradient(700px 500px at 80% 10%, rgba(20,168,154,0.4), transparent 65%), radial-gradient(500px 400px at 10% 95%, rgba(47,211,192,0.16), transparent 70%);"></div>
+    <div class="relative max-w-7xl mx-auto px-6 text-center w-full">
+      <div class="flex items-center gap-3 justify-center mb-5">
+        <span class="w-8 streak-line"></span>
+        <span class="eyebrow text-mint">Error 404</span>
+        <span class="w-8 streak-line" style="transform:scaleX(-1)"></span>
+      </div>
+      <h1 class="display-hero text-white text-[26vw] sm:text-[12rem] md:text-[15rem] leading-[0.85]">404</h1>
+      <h2 class="section-title text-4xl sm:text-5xl mt-2">Out of bounds.</h2>
+      <p class="mt-5 text-white/70 text-lg max-w-lg mx-auto leading-relaxed">That shuttle sailed past the line — the page you're after doesn't exist or has moved. Let's get you back on court.</p>
+      <div class="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="index.html" class="btn btn-primary">Back to home</a>
+        <a href="contact.html" class="btn btn-ghost">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-teal-900 text-white/70 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-14">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="LeapStrike logo" class="h-10 w-10 object-contain" />
+          <span class="text-white font-display text-xl tracking-wide">LEAPSTRIKE</span>
+        </a>
+        <nav class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold text-white/75">
+          <a href="membership.html" class="hover:text-mint transition-colors">Membership</a>
+          <a href="training.html" class="hover:text-mint transition-colors">Training</a>
+          <a href="facilities.html" class="hover:text-mint transition-colors">Facilities</a>
+          <a href="schedule.html" class="hover:text-mint transition-colors">Schedule</a>
+          <a href="faq.html" class="hover:text-mint transition-colors">FAQ</a>
+          <a href="contact.html" class="hover:text-mint transition-colors">Contact</a>
+        </nav>
+      </div>
+      <div class="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-sm tracking-wide uppercase font-semibold text-white/50">LeapStrike Badminton Club · Concord, NC</p>
+        <p class="text-sm text-white/40">© 2026 LeapStrike · All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
