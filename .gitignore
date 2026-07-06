@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Dev/build artifacts
+scripts/shots/
+scripts/serve.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log

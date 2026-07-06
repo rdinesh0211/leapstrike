@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule — LeapStrike Badminton Club</title>
+  <meta name="description" content="LeapStrike weekly schedule — open play hours and kids training — plus the full Open Play rules and queuing policy." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind.config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+
+<body class="font-sans grain">
+
+  <!-- ============ NAV ============ -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-50 scrolled">
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="assets/logo.png" alt="LeapStrike logo" class="h-11 w-11 object-contain drop-shadow" />
+        <span class="text-white font-display text-2xl tracking-wide">LEAPSTRIKE</span>
+      </a>
+      <div class="hidden lg:flex items-center gap-9 text-[0.95rem] font-semibold text-white/85">
+        <a href="membership.html" class="hover:text-mint transition-colors">Membership</a>
+        <a href="training.html" class="hover:text-mint transition-colors">Training</a>
+        <a href="facilities.html" class="hover:text-mint transition-colors">Facilities</a>
+        <a href="schedule.html" class="text-mint" aria-current="page">Schedule</a>
+        <a href="faq.html" class="hover:text-mint transition-colors">FAQ</a>
+        <a href="contact.html" class="hover:text-mint transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="membership.html" class="btn btn-primary hidden sm:inline-flex !py-3 !px-6 text-sm">Join now</a>
+        <button id="menuBtn" aria-label="Open menu" class="lg:hidden text-white p-2">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="lg:hidden hidden bg-teal-900/97 backdrop-blur-md">
+      <div class="px-6 py-6 flex flex-col gap-4 text-white text-lg font-semibold">
+        <a href="membership.html" class="mobile-link">Membership</a>
+        <a href="training.html" class="mobile-link">Training</a>
+        <a href="facilities.html" class="mobile-link">Facilities</a>
+        <a href="schedule.html" class="mobile-link text-mint">Schedule</a>
+        <a href="faq.html" class="mobile-link">FAQ</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="membership.html" class="mobile-link btn btn-primary mt-2 justify-center">Join now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="relative bg-teal-900 text-white overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24">
+    <div class="absolute inset-0 opacity-60" style="background:radial-gradient(700px 480px at 85% 0%, rgba(20,168,154,0.4), transparent 65%), radial-gradient(500px 400px at 5% 100%, rgba(47,211,192,0.16), transparent 70%);"></div>
+    <div class="relative max-w-7xl mx-auto px-6">
+      <nav class="flex items-center gap-2 text-sm font-semibold text-white/50 mb-6">
+        <a href="index.html" class="hover:text-mint transition-colors">Home</a><span>/</span><span class="text-mint">Schedule</span>
+      </nav>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-8 streak-line"></span>
+        <span class="eyebrow text-mint">Weekly schedule</span>
+      </div>
+      <h1 class="section-title text-6xl sm:text-7xl md:text-8xl">This week on court.</h1>
+      <p class="mt-5 text-white/70 text-lg max-w-2xl leading-relaxed">Open play every day, plus junior coaching on weekends. Both members and guests must register in advance for Open Play and check in at the front desk.</p>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE TABLE ============ -->
+  <section class="py-20 md:py-28 bg-surface">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="reveal rounded-3xl bg-white shadow-card border border-teal-900/5 divide-y divide-ink/10 overflow-hidden">
+        <div class="grid grid-cols-12 gap-4 px-6 sm:px-8 py-5 text-xs font-bold uppercase tracking-widest text-ink/40">
+          <div class="col-span-5 sm:col-span-4">Day</div>
+          <div class="col-span-4 sm:col-span-4">Hours</div>
+          <div class="col-span-3 sm:col-span-4 text-right sm:text-left">Session</div>
+        </div>
+        <div class="grid grid-cols-12 gap-4 px-6 sm:px-8 py-6 items-center hover:bg-surface2/60 transition-colors">
+          <div class="col-span-5 sm:col-span-4 font-display text-xl tracking-tight text-ink">Mon – Fri</div>
+          <div class="col-span-4 sm:col-span-4 text-ink/70">7:00 – 10:00 PM</div>
+          <div class="col-span-3 sm:col-span-4 text-right sm:text-left"><span class="inline-block text-xs font-bold px-3 py-1 rounded-full bg-teal-500/15 text-teal-700">Open Play</span></div>
+        </div>
+        <div class="grid grid-cols-12 gap-4 px-6 sm:px-8 py-6 items-center hover:bg-surface2/60 transition-colors">
+          <div class="col-span-5 sm:col-span-4 font-display text-xl tracking-tight text-ink">Saturday</div>
+          <div class="col-span-4 sm:col-span-4 text-ink/70">8:00 AM – 8:00 PM</div>
+          <div class="col-span-3 sm:col-span-4 text-right sm:text-left"><span class="inline-block text-xs font-bold px-3 py-1 rounded-full bg-teal-500/15 text-teal-700">Open Play</span></div>
+        </div>
+        <div class="grid grid-cols-12 gap-4 px-6 sm:px-8 py-6 items-center hover:bg-surface2/60 transition-colors">
+          <div class="col-span-5 sm:col-span-4 font-display text-xl tracking-tight text-ink">Sunday</div>
+          <div class="col-span-4 sm:col-span-4 text-ink/70">9:00 AM – 6:00 PM</div>
+          <div class="col-span-3 sm:col-span-4 text-right sm:text-left"><span class="inline-block text-xs font-bold px-3 py-1 rounded-full bg-teal-500/15 text-teal-700">Open Play</span></div>
+        </div>
+        <div class="grid grid-cols-12 gap-4 px-6 sm:px-8 py-6 items-center hover:bg-surface2/60 transition-colors">
+          <div class="col-span-5 sm:col-span-4 font-display text-xl tracking-tight text-ink">Sat &amp; Sun</div>
+          <div class="col-span-4 sm:col-span-4 text-ink/70">12:00 – 4:00 PM</div>
+          <div class="col-span-3 sm:col-span-4 text-right sm:text-left"><span class="inline-block text-xs font-bold px-3 py-1 rounded-full bg-teal-500 text-white">Kids Training</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OPEN PLAY POLICY ============ -->
+  <section class="py-20 md:py-28 bg-ink text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-40" style="background:radial-gradient(600px 400px at 90% 5%, rgba(20,168,154,0.3), transparent 70%);"></div>
+    <div class="relative max-w-5xl mx-auto px-6">
+      <div class="reveal max-w-2xl">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-8 streak-line"></span>
+          <span class="eyebrow text-mint">Open play rules &amp; policy</span>
+        </div>
+        <h2 class="section-title text-4xl sm:text-5xl md:text-6xl">How the queue works.</h2>
+        <p class="mt-4 text-white/60 text-lg leading-relaxed">Open Play uses a stand-and-marker system so games run fairly and courts turn over smoothly.</p>
+      </div>
+
+      <ol class="mt-12 grid sm:grid-cols-2 gap-x-10 gap-y-8">
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">01</span>
+          <div><h3 class="font-bold text-lg">Queuing stands</h3><p class="mt-1.5 text-white/65 leading-relaxed">The club uses stands to manage court queues. Each stand holds up to 4 rackets and represents one queue. If a stand is full, use the next available one.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">02</span>
+          <div><h3 class="font-bold text-lg">Next-up marker</h3><p class="mt-1.5 text-white/65 leading-relaxed">A marker shows which stand is "next available" — that group plays as soon as a court opens.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">03</span>
+          <div><h3 class="font-bold text-lg">Waiting for a game to end</h3><p class="mt-1.5 text-white/65 leading-relaxed">Players in queue wait for the current game to finish, then may ask those on court to vacate.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">04</span>
+          <div><h3 class="font-bold text-lg">One racket per player</h3><p class="mt-1.5 text-white/65 leading-relaxed">To join a queue, place one racket in a stand — one per player. You can't reserve a spot for someone who isn't present.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">05</span>
+          <div><h3 class="font-bold text-lg">No double-queuing</h3><p class="mt-1.5 text-white/65 leading-relaxed">If you're on a court, you can't also have a racket in a stand — you can't play and wait at the same time.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">06</span>
+          <div><h3 class="font-bold text-lg">Choosing a stand</h3><p class="mt-1.5 text-white/65 leading-relaxed">Pick any stand up to its 4-racket limit. Players who want to play together can share a stand.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">07</span>
+          <div><h3 class="font-bold text-lg">Don't move others' rackets</h3><p class="mt-1.5 text-white/65 leading-relaxed">Never move another player's racket between stands without their consent.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">08</span>
+          <div><h3 class="font-bold text-lg">Groups of four</h3><p class="mt-1.5 text-white/65 leading-relaxed">Only complete groups of 4 may take an open court. It's the group's job to have all four ready when their turn comes.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">09</span>
+          <div><h3 class="font-bold text-lg">Incomplete groups</h3><p class="mt-1.5 text-white/65 leading-relaxed">A group that isn't complete when its turn arrives forfeits that turn until it has 4 players. It may invite players coming off the court to fill in.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">10</span>
+          <div><h3 class="font-bold text-lg">Withdrawing a racket</h3><p class="mt-1.5 text-white/65 leading-relaxed">You may pull your racket from a stand anytime. If it was a full stand, the rest should find a replacement. You can't withdraw once your group is moving onto a court.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">11</span>
+          <div><h3 class="font-bold text-lg">Joining a partial stand</h3><p class="mt-1.5 text-white/65 leading-relaxed">Any player may join a stand that currently has 3 or fewer rackets.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">12</span>
+          <div><h3 class="font-bold text-lg">Cancellations &amp; refunds</h3><p class="mt-1.5 text-white/65 leading-relaxed">To cancel an Open Play registration and receive a refund, withdraw at least 4 hours in advance.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">13</span>
+          <div><h3 class="font-bold text-lg">Advancing the marker</h3><p class="mt-1.5 text-white/65 leading-relaxed">When a group moves onto a court, the "next available" marker moves to the next-higher stand — or back to stand 1 after the last one.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-teal-900 text-white/70">
+    <div class="max-w-7xl mx-auto px-6 py-14">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="LeapStrike logo" class="h-10 w-10 object-contain" />
+          <span class="text-white font-display text-xl tracking-wide">LEAPSTRIKE</span>
+        </a>
+        <nav class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold text-white/75">
+          <a href="membership.html" class="hover:text-mint transition-colors">Membership</a>
+          <a href="training.html" class="hover:text-mint transition-colors">Training</a>
+          <a href="facilities.html" class="hover:text-mint transition-colors">Facilities</a>
+          <a href="schedule.html" class="hover:text-mint transition-colors">Schedule</a>
+          <a href="faq.html" class="hover:text-mint transition-colors">FAQ</a>
+          <a href="contact.html" class="hover:text-mint transition-colors">Contact</a>
+        </nav>
+      </div>
+      <div class="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-sm tracking-wide uppercase font-semibold text-white/50">LeapStrike Badminton Club · Concord, NC</p>
+        <p class="text-sm text-white/40">© 2026 LeapStrike · All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>

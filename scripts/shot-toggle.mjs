@@ -1,0 +1,13 @@
+import puppeteer from 'puppeteer-core';
+const CHROME = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+const b = await puppeteer.launch({ executablePath: CHROME, headless: 'new', args: ['--no-sandbox'] });
+const p = await b.newPage();
+await p.setViewport({ width: 1440, height: 900 });
+await p.goto('http://localhost:3000/', { waitUntil: 'networkidle0' });
+await p.evaluate(() => document.querySelectorAll('.reveal').forEach(e => { e.classList.add('in'); e.style.opacity = '1'; e.style.transform = 'none'; }));
+await p.click('#billingToggle');
+await new Promise(r => setTimeout(r, 500));
+const el = await p.$('#membership');
+await el.screenshot({ path: 'scripts/shots/sec-membership-annual.png' });
+await b.close();
+console.log('ok');

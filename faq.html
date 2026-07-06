@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — LeapStrike Badminton Club</title>
+  <meta name="description" content="Frequently asked questions about playing, membership, equipment and shoes at LeapStrike Badminton Club." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind.config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+
+<body class="font-sans grain">
+
+  <!-- ============ NAV ============ -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-50 scrolled">
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="assets/logo.png" alt="LeapStrike logo" class="h-11 w-11 object-contain drop-shadow" />
+        <span class="text-white font-display text-2xl tracking-wide">LEAPSTRIKE</span>
+      </a>
+      <div class="hidden lg:flex items-center gap-9 text-[0.95rem] font-semibold text-white/85">
+        <a href="membership.html" class="hover:text-mint transition-colors">Membership</a>
+        <a href="training.html" class="hover:text-mint transition-colors">Training</a>
+        <a href="facilities.html" class="hover:text-mint transition-colors">Facilities</a>
+        <a href="schedule.html" class="hover:text-mint transition-colors">Schedule</a>
+        <a href="faq.html" class="text-mint" aria-current="page">FAQ</a>
+        <a href="contact.html" class="hover:text-mint transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="membership.html" class="btn btn-primary hidden sm:inline-flex !py-3 !px-6 text-sm">Join now</a>
+        <button id="menuBtn" aria-label="Open menu" class="lg:hidden text-white p-2">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="lg:hidden hidden bg-teal-900/97 backdrop-blur-md">
+      <div class="px-6 py-6 flex flex-col gap-4 text-white text-lg font-semibold">
+        <a href="membership.html" class="mobile-link">Membership</a>
+        <a href="training.html" class="mobile-link">Training</a>
+        <a href="facilities.html" class="mobile-link">Facilities</a>
+        <a href="schedule.html" class="mobile-link">Schedule</a>
+        <a href="faq.html" class="mobile-link text-mint">FAQ</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="membership.html" class="mobile-link btn btn-primary mt-2 justify-center">Join now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="relative bg-teal-900 text-white overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24">
+    <div class="absolute inset-0 opacity-60" style="background:radial-gradient(700px 480px at 85% 0%, rgba(20,168,154,0.4), transparent 65%), radial-gradient(500px 400px at 5% 100%, rgba(47,211,192,0.16), transparent 70%);"></div>
+    <div class="relative max-w-7xl mx-auto px-6">
+      <nav class="flex items-center gap-2 text-sm font-semibold text-white/50 mb-6">
+        <a href="index.html" class="hover:text-mint transition-colors">Home</a><span>/</span><span class="text-mint">FAQ</span>
+      </nav>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-8 streak-line"></span>
+        <span class="eyebrow text-mint">FAQ</span>
+      </div>
+      <h1 class="section-title text-6xl sm:text-7xl md:text-8xl">Good to know.</h1>
+      <p class="mt-5 text-white/70 text-lg max-w-2xl leading-relaxed">The quick answers to the questions we hear most. Still stuck? Email <a href="mailto:support@leapstrike.club" class="text-mint hover:text-white font-semibold transition-colors">support@leapstrike.club</a>.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="py-20 md:py-28 bg-surface">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="reveal divide-y divide-ink/10 border-t border-ink/10">
+        <div class="faq-item open">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">Do I have to be a member to play?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">No. Drop-in guests are welcome and can buy a day pass at the front desk for $15.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">I have a membership — do I need to register for Open Play?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">Yes. Both members and non-members must register in advance for Open Play and check in at the front desk to participate.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">Do I need to bring my own racket and shuttlecocks? What else should I bring?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">You're welcome to bring your own equipment. If you don't have a racket, rentals start at $5, and shuttlecocks can be purchased on-site. A Pro Shop is also available if you'd like to buy your own gear.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">What shoes are allowed?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">Only non-marking shoes are permitted; black-sole and street shoes aren't allowed, and badminton shoes are preferred. Players wearing shoes that leave marks on the court will be fined $100.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">How do I change my membership or training program?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">Email support@leapstrike.club with your request. Please allow 1–4 business days for the change to be processed.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">How do I cancel my membership or training program?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">Cancellations require 30 days' advance notice before your next billing date. Email support@leapstrike.club to submit your cancellation.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">What if I need to reach the club for something not covered here?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">Email support@leapstrike.club for any other inquiries and we'll be glad to help.</p></div>
+        </div>
+      </div>
+
+      <!-- Contact prompt -->
+      <div class="reveal mt-14 rounded-3xl bg-teal-900 text-white p-8 sm:p-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6 relative overflow-hidden">
+        <div class="absolute -right-16 -bottom-20 w-64 h-64 rounded-full bg-teal-500/20 blur-3xl"></div>
+        <div class="relative">
+          <h2 class="font-display text-2xl sm:text-3xl tracking-tight">Still have a question?</h2>
+          <p class="mt-2 text-white/70 leading-relaxed">We're happy to help you get on court.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary relative shrink-0">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-teal-900 text-white/70">
+    <div class="max-w-7xl mx-auto px-6 py-14">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="LeapStrike logo" class="h-10 w-10 object-contain" />
+          <span class="text-white font-display text-xl tracking-wide">LEAPSTRIKE</span>
+        </a>
+        <nav class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold text-white/75">
+          <a href="membership.html" class="hover:text-mint transition-colors">Membership</a>
+          <a href="training.html" class="hover:text-mint transition-colors">Training</a>
+          <a href="facilities.html" class="hover:text-mint transition-colors">Facilities</a>
+          <a href="schedule.html" class="hover:text-mint transition-colors">Schedule</a>
+          <a href="faq.html" class="hover:text-mint transition-colors">FAQ</a>
+          <a href="contact.html" class="hover:text-mint transition-colors">Contact</a>
+        </nav>
+      </div>
+      <div class="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-sm tracking-wide uppercase font-semibold text-white/50">LeapStrike Badminton Club · Concord, NC</p>
+        <p class="text-sm text-white/40">© 2026 LeapStrike · All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>

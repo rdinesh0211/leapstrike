@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeapStrike — North Charlotte's Badminton Club</title>
+  <meta name="description" content="LeapStrike is North Charlotte's badminton club — six doubles courts, two singles courts, open play, and kids training in Concord, NC." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind.config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+
+<body class="font-sans grain">
+
+  <!-- ============ NAV ============ -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="assets/logo.png" alt="LeapStrike logo" class="h-11 w-11 object-contain drop-shadow" />
+        <span class="text-white font-display text-2xl tracking-wide">LEAPSTRIKE</span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-9 text-[0.95rem] font-semibold text-white/85">
+        <a href="membership.html" class="hover:text-mint transition-colors">Membership</a>
+        <a href="training.html" class="hover:text-mint transition-colors">Training</a>
+        <a href="facilities.html" class="hover:text-mint transition-colors">Facilities</a>
+        <a href="schedule.html" class="hover:text-mint transition-colors">Schedule</a>
+        <a href="faq.html" class="hover:text-mint transition-colors">FAQ</a>
+        <a href="contact.html" class="hover:text-mint transition-colors">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="membership.html" class="btn btn-primary hidden sm:inline-flex !py-3 !px-6 text-sm">Join now</a>
+        <button id="menuBtn" aria-label="Open menu" class="lg:hidden text-white p-2">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="lg:hidden hidden bg-teal-900/97 backdrop-blur-md">
+      <div class="px-6 py-6 flex flex-col gap-4 text-white text-lg font-semibold">
+        <a href="membership.html" class="mobile-link">Membership</a>
+        <a href="training.html" class="mobile-link">Training</a>
+        <a href="facilities.html" class="mobile-link">Facilities</a>
+        <a href="schedule.html" class="mobile-link">Schedule</a>
+        <a href="faq.html" class="mobile-link">FAQ</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="membership.html" class="mobile-link btn btn-primary mt-2 justify-center">Join now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="relative min-h-[100svh] hero-bg flex items-end md:items-center">
+    <!-- legibility overlays -->
+    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-teal-900/45 hidden md:block"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-teal-900/95 via-teal-900/55 to-teal-900/5 md:hidden"></div>
+
+    <div class="relative w-full max-w-7xl mx-auto px-6 pb-14 md:pb-0 pt-28">
+      <div class="ml-auto max-w-2xl text-right">
+        <h1 class="display-hero text-white text-[14vw] leading-[1.0] sm:text-7xl md:text-[7.5rem] lg:text-[9rem] md:leading-[1.0]">
+          LEAP.<br /> STRIKE.<br /> REPEAT.
+        </h1>
+
+        <p class="mt-5 md:mt-6 text-white/85 text-base sm:text-lg max-w-md ml-auto leading-relaxed">
+          Six doubles courts, two singles courts, and a club that plays as hard as you do. LeapStrike is where North Charlotte comes to get better at badminton.
+        </p>
+
+        <div class="mt-7 md:mt-8 flex flex-col sm:flex-row gap-4 md:justify-end">
+          <a href="membership.html" class="btn btn-primary">Become a member</a>
+          <a href="contact.html" class="btn btn-ghost">Book a free trial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS BAR ============ -->
+  <section class="bg-teal-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-3 divide-x divide-white/12">
+      <div class="text-center px-2">
+        <div class="font-display text-4xl sm:text-6xl text-mint">6</div>
+        <div class="mt-1 text-xs sm:text-sm font-semibold tracking-wide text-white/70 uppercase">Doubles courts</div>
+      </div>
+      <div class="text-center px-2">
+        <div class="font-display text-4xl sm:text-6xl text-mint">2</div>
+        <div class="mt-1 text-xs sm:text-sm font-semibold tracking-wide text-white/70 uppercase">Singles courts</div>
+      </div>
+      <div class="text-center px-2">
+        <div class="font-display text-4xl sm:text-6xl text-mint">7</div>
+        <div class="mt-1 text-xs sm:text-sm font-semibold tracking-wide text-white/70 uppercase">Days a week</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MEMBERSHIP ============ -->
+  <section id="membership" class="py-24 md:py-32 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal max-w-2xl">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-8 streak-line"></span>
+          <span class="eyebrow text-teal-600">Membership</span>
+        </div>
+        <h2 class="section-title text-5xl sm:text-6xl md:text-7xl text-ink">Pick your play.</h2>
+        <p class="mt-4 text-ink/70 text-lg leading-relaxed">Unlimited indoor badminton, all on our six doubles and two singles courts. Choose the plan that fits your household.</p>
+        <a href="membership.html" class="group inline-flex items-center gap-2 mt-5 font-bold text-teal-600 hover:text-teal-700 transition-colors">Membership details &amp; terms <span class="transition-transform group-hover:translate-x-1">→</span></a>
+      </div>
+
+      <!-- Billing toggle -->
+      <div id="billing" class="reveal mt-10 flex items-center gap-4">
+        <span data-bill="monthly" class="text-sm font-bold text-ink">Monthly</span>
+        <button id="billingToggle" role="switch" aria-checked="false" aria-label="Toggle annual billing"
+          class="relative w-16 h-9 rounded-full bg-teal-600/25 border border-teal-600/30 p-1">
+          <span class="toggle-knob block w-7 h-7 rounded-full bg-teal-500 shadow-pill"></span>
+        </button>
+        <span data-bill="annual" class="text-sm font-bold text-ink/50">Annual <span class="text-teal-600">· save 17%</span></span>
+      </div>
+
+      <!-- Cards -->
+      <div class="mt-12 grid md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Individual -->
+        <div class="reveal rounded-3xl bg-white p-8 sm:p-10 shadow-card border border-teal-900/5 flex flex-col">
+          <h3 class="font-display text-3xl text-ink tracking-tight">Individual</h3>
+          <p class="mt-1 text-ink/60">Everything you need for solo play.</p>
+          <div class="mt-6 flex items-end gap-2">
+            <span class="price font-display text-6xl text-ink" data-monthly="$50" data-annual="$500">$50</span>
+            <span class="price-period text-ink/55 font-semibold pb-2" data-monthly="/ month" data-annual="/ year">/ month</span>
+          </div>
+          <p class="price-note text-sm text-teal-600 font-semibold mt-1" data-monthly="Billed monthly · cancel anytime" data-annual="$500 billed annually · save 17%">Billed monthly · cancel anytime</p>
+
+          <ul class="mt-8 space-y-3 text-ink/80 flex-1">
+            <li class="flex gap-3"><span class="check">✓</span> Unlimited indoor badminton play</li>
+            <li class="flex gap-3"><span class="check">✓</span> Access to all 6 doubles + 2 singles courts</li>
+            <li class="flex gap-3"><span class="check">✓</span> Member app &amp; online court booking</li>
+            <li class="flex gap-3"><span class="check">✓</span> Open play, seven days a week</li>
+          </ul>
+          <a href="#contact" class="btn btn-dark mt-8 w-full">Choose Individual</a>
+        </div>
+
+        <!-- Family -->
+        <div class="reveal relative rounded-3xl bg-teal-900 p-8 sm:p-10 shadow-float text-white flex flex-col overflow-hidden">
+          <div class="absolute -right-16 -top-16 w-52 h-52 rounded-full bg-teal-500/25 blur-2xl"></div>
+          <div class="relative">
+            <div class="flex items-center justify-between">
+              <h3 class="font-display text-3xl tracking-tight">Family</h3>
+              <span class="text-[0.7rem] font-bold tracking-widest uppercase bg-mint text-teal-900 px-3 py-1 rounded-full">Best value</span>
+            </div>
+            <p class="mt-1 text-white/70">Individual plan, plus your household.</p>
+            <div class="mt-6 flex items-end gap-2">
+              <span class="price font-display text-6xl" data-monthly="+$30" data-annual="+$300">+$30</span>
+              <span class="price-period text-white/60 font-semibold pb-2" data-monthly="/ mo per member" data-annual="/ yr per member">/ mo per member</span>
+            </div>
+            <p class="price-note text-sm text-mint font-semibold mt-1" data-monthly="Added to your $50 Individual plan" data-annual="Added to your $500 Individual plan · save 17%">Added to your $50 Individual plan</p>
+
+            <ul class="mt-8 space-y-3 text-white/85 flex-1">
+              <li class="flex gap-3"><span class="check-light">✓</span> Everything in Individual</li>
+              <li class="flex gap-3"><span class="check-light">✓</span> <span class="price-feat" data-monthly="$30/mo per family member added (same address)" data-annual="$300/yr per family member added (same address)">$30/mo per family member added (same address)</span></li>
+              <li class="flex gap-3"><span class="check-light">✓</span> Kids training access, Sat &amp; Sun</li>
+              <li class="flex gap-3"><span class="check-light">✓</span> One shared household account</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary mt-8 w-full">Choose Family</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- How to join -->
+      <div class="reveal mt-16">
+        <div class="flex items-center gap-3 mb-8">
+          <span class="w-8 streak-line"></span>
+          <span class="eyebrow text-teal-600">How to join</span>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-2xl bg-surface2 p-7 border border-teal-900/5">
+            <div class="font-display text-2xl text-teal-500">01</div>
+            <p class="mt-3 text-ink/80 leading-relaxed">Download the <strong>CourtReserve</strong> app from the App Store or Google Play.</p>
+          </div>
+          <div class="rounded-2xl bg-surface2 p-7 border border-teal-900/5">
+            <div class="font-display text-2xl text-teal-500">02</div>
+            <p class="mt-3 text-ink/80 leading-relaxed">Tap <strong>Join Organisation</strong> and search for <strong>LeapStrike</strong> in the search bar.</p>
+          </div>
+          <div class="rounded-2xl bg-surface2 p-7 border border-teal-900/5">
+            <div class="font-display text-2xl text-teal-500">03</div>
+            <p class="mt-3 text-ink/80 leading-relaxed">Select the club, fill out the form, and create your account to start playing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAINING ============ -->
+  <section id="training" class="py-24 md:py-32 bg-ink text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-40" style="background:radial-gradient(600px 400px at 85% 10%, rgba(20,168,154,0.35), transparent 70%), radial-gradient(500px 400px at 10% 90%, rgba(47,211,192,0.18), transparent 70%);"></div>
+    <div class="relative max-w-7xl mx-auto px-6">
+      <div class="reveal max-w-2xl">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-8 streak-line"></span>
+          <span class="eyebrow text-mint">Training programs</span>
+        </div>
+        <h2 class="section-title text-5xl sm:text-6xl md:text-7xl">Get better, faster.</h2>
+        <p class="mt-4 text-white/65 text-lg leading-relaxed">Coaching for every level, from your first grip to tournament match play.</p>
+        <a href="training.html" class="group inline-flex items-center gap-2 mt-5 font-bold text-mint hover:text-white transition-colors">View training programs <span class="transition-transform group-hover:translate-x-1">→</span></a>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-2 gap-x-12 gap-y-10">
+        <div class="reveal flex gap-6 border-t border-white/12 pt-8">
+          <span class="font-display text-3xl text-teal-400 shrink-0">01</span>
+          <div>
+            <h3 class="font-display text-2xl tracking-tight">Foundations <span class="text-white/50 text-lg font-sans font-semibold">· Beginner</span></h3>
+            <p class="mt-2 text-white/65 leading-relaxed">Grips, footwork and rally basics in a friendly small-group setting. Eight-week block.</p>
+          </div>
+        </div>
+        <div class="reveal flex gap-6 border-t border-white/12 pt-8">
+          <span class="font-display text-3xl text-teal-400 shrink-0">02</span>
+          <div>
+            <h3 class="font-display text-2xl tracking-tight">Junior Academy <span class="text-white/50 text-lg font-sans font-semibold">· Ages 7–16</span></h3>
+            <p class="mt-2 text-white/65 leading-relaxed">Age-banded pathway building technique, fitness and match play. After-school and weekends.</p>
+          </div>
+        </div>
+        <div class="reveal flex gap-6 border-t border-white/12 pt-8">
+          <span class="font-display text-3xl text-teal-400 shrink-0">03</span>
+          <div>
+            <h3 class="font-display text-2xl tracking-tight">Competitive Squad</h3>
+            <p class="mt-2 text-white/65 leading-relaxed">High-intensity drills, tactics and sparring for tournament players. Coach-selected.</p>
+          </div>
+        </div>
+        <div class="reveal flex gap-6 border-t border-white/12 pt-8">
+          <span class="font-display text-3xl text-teal-400 shrink-0">04</span>
+          <div>
+            <h3 class="font-display text-2xl tracking-tight">Private 1-on-1</h3>
+            <p class="mt-2 text-white/65 leading-relaxed">Personalised sessions with a certified coach. Video analysis available. Book by the hour.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FACILITIES (placeholder) ============ -->
+  <section id="facilities" class="py-24 md:py-32 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal max-w-2xl">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-8 streak-line"></span>
+          <span class="eyebrow text-teal-600">Facilities</span>
+        </div>
+        <h2 class="section-title text-5xl sm:text-6xl md:text-7xl text-ink">Built for the game.</h2>
+        <p class="mt-4 text-ink/70 text-lg leading-relaxed">A full look at our courts and amenities is coming soon.</p>
+        <a href="facilities.html" class="group inline-flex items-center gap-2 mt-5 font-bold text-teal-600 hover:text-teal-700 transition-colors">Facilities &amp; court rules <span class="transition-transform group-hover:translate-x-1">→</span></a>
+      </div>
+
+      <div class="reveal mt-12 grid grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="col-span-2 lg:col-span-2 lg:row-span-2 relative rounded-3xl overflow-hidden aspect-[4/3] lg:aspect-auto group border border-teal-900/5">
+          <img src="https://placehold.co/900x900/0C3A3B/2FD3C0?text=Main+Hall+%E2%80%94+6+Courts" alt="Placeholder — main hall" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent"></div>
+          <span class="absolute bottom-5 left-5 text-white font-display text-2xl tracking-tight">Main Hall — 6 Courts</span>
+        </div>
+        <div class="relative rounded-3xl overflow-hidden aspect-square border border-teal-900/5">
+          <img src="https://placehold.co/500x500/E9F0EF/0C3A3B?text=Pro+Shop" alt="Placeholder — pro shop" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative rounded-3xl overflow-hidden aspect-square border border-teal-900/5">
+          <img src="https://placehold.co/500x500/E9F0EF/0C3A3B?text=Lounge" alt="Placeholder — lounge" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative rounded-3xl overflow-hidden aspect-square border border-teal-900/5">
+          <img src="https://placehold.co/500x500/E9F0EF/0C3A3B?text=Locker+Rooms" alt="Placeholder — locker rooms" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative rounded-3xl overflow-hidden aspect-square border border-teal-900/5">
+          <img src="https://placehold.co/500x500/E9F0EF/0C3A3B?text=Strength+Studio" alt="Placeholder — strength studio" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <p class="reveal mt-6 text-sm text-ink/45 italic">Placeholder imagery — to be replaced with real facility photos.</p>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE ============ -->
+  <section id="schedule" class="py-24 md:py-32 bg-teal-900 text-white relative overflow-hidden">
+    <div class="absolute -left-32 top-1/4 w-[420px] h-[420px] rounded-full bg-teal-500/15 blur-3xl"></div>
+    <div class="relative max-w-7xl mx-auto px-6">
+      <div class="reveal max-w-2xl">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-8 streak-line"></span>
+          <span class="eyebrow text-mint">Weekly schedule</span>
+        </div>
+        <h2 class="section-title text-5xl sm:text-6xl md:text-7xl">This week on court.</h2>
+        <p class="mt-4 text-white/65 text-lg leading-relaxed">Open play every day, plus junior coaching on weekends.</p>
+        <a href="schedule.html" class="group inline-flex items-center gap-2 mt-5 font-bold text-mint hover:text-white transition-colors">Schedule &amp; open play policy <span class="transition-transform group-hover:translate-x-1">→</span></a>
+      </div>
+
+      <div class="reveal mt-12 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm divide-y divide-white/10 overflow-hidden">
+        <div class="grid grid-cols-12 gap-4 px-6 sm:px-8 py-5 text-xs font-bold uppercase tracking-widest text-white/50">
+          <div class="col-span-5 sm:col-span-4">Day</div>
+          <div class="col-span-4 sm:col-span-4">Hours</div>
+          <div class="col-span-3 sm:col-span-4 text-right sm:text-left">Session</div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-4 px-6 sm:px-8 py-6 items-center hover:bg-white/5 transition-colors">
+          <div class="col-span-5 sm:col-span-4 font-display text-xl tracking-tight">Mon – Fri</div>
+          <div class="col-span-4 sm:col-span-4 text-white/80">7:00 – 10:00 PM</div>
+          <div class="col-span-3 sm:col-span-4 text-right sm:text-left"><span class="inline-block text-xs font-bold px-3 py-1 rounded-full bg-teal-500/20 text-mint">Open Play</span></div>
+        </div>
+        <div class="grid grid-cols-12 gap-4 px-6 sm:px-8 py-6 items-center hover:bg-white/5 transition-colors">
+          <div class="col-span-5 sm:col-span-4 font-display text-xl tracking-tight">Saturday</div>
+          <div class="col-span-4 sm:col-span-4 text-white/80">8:00 AM – 8:00 PM</div>
+          <div class="col-span-3 sm:col-span-4 text-right sm:text-left"><span class="inline-block text-xs font-bold px-3 py-1 rounded-full bg-teal-500/20 text-mint">Open Play</span></div>
+        </div>
+        <div class="grid grid-cols-12 gap-4 px-6 sm:px-8 py-6 items-center hover:bg-white/5 transition-colors">
+          <div class="col-span-5 sm:col-span-4 font-display text-xl tracking-tight">Sunday</div>
+          <div class="col-span-4 sm:col-span-4 text-white/80">9:00 AM – 6:00 PM</div>
+          <div class="col-span-3 sm:col-span-4 text-right sm:text-left"><span class="inline-block text-xs font-bold px-3 py-1 rounded-full bg-teal-500/20 text-mint">Open Play</span></div>
+        </div>
+        <div class="grid grid-cols-12 gap-4 px-6 sm:px-8 py-6 items-center hover:bg-white/5 transition-colors">
+          <div class="col-span-5 sm:col-span-4 font-display text-xl tracking-tight">Sat &amp; Sun</div>
+          <div class="col-span-4 sm:col-span-4 text-white/80">12:00 – 4:00 PM</div>
+          <div class="col-span-3 sm:col-span-4 text-right sm:text-left"><span class="inline-block text-xs font-bold px-3 py-1 rounded-full bg-mint text-teal-900">Kids Training</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="py-24 md:py-32 bg-surface">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="reveal">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-8 streak-line"></span>
+          <span class="eyebrow text-teal-600">FAQ</span>
+        </div>
+        <h2 class="section-title text-5xl sm:text-6xl md:text-7xl text-ink">Good to know.</h2>
+        <a href="faq.html" class="group inline-flex items-center gap-2 mt-5 font-bold text-teal-600 hover:text-teal-700 transition-colors">See all FAQs <span class="transition-transform group-hover:translate-x-1">→</span></a>
+      </div>
+
+      <div class="reveal mt-12 divide-y divide-ink/10 border-t border-ink/10">
+        <!-- items injected pattern -->
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">Do I have to be a member to play?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">No. Drop-in guests are welcome and can purchase a day pass at the front desk for $15.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">I have a membership — do I need to register for Open Play?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">Yes. Both members and non-members must register in advance for Open Play and check in at the front desk to participate.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">Do I need to bring my own racket and shuttlecocks?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">You're welcome to bring your own equipment. If you don't have a racket, rentals are available starting at $5, and shuttlecocks can be purchased on-site. A Pro Shop is also available if you'd like to buy your own gear.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">What shoes are allowed?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">Only non-marking shoes are permitted; black-sole and street shoes are not allowed. Badminton shoes are preferred. Players wearing shoes that leave marks on the court will be fined $100.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">How do I change or cancel my membership?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">Email support@leapstrike.club. Changes take 1–4 business days to process. Cancellations require 30 days' advance notice before your next billing date.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q w-full flex items-center justify-between gap-6 py-6 text-left">
+            <span class="text-lg sm:text-xl font-bold text-ink">Can I freeze or hold my membership?</span>
+            <span class="faq-plus shrink-0 text-teal-500 text-2xl font-display transition-transform">+</span>
+          </button>
+          <div class="faq-body"><p class="pb-6 text-ink/70 leading-relaxed">Yes. Members may freeze or hold their membership for up to two months at no charge. Submit freeze requests by email to support@leapstrike.club.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / CTA ============ -->
+  <section id="contact" class="py-24 md:py-32 bg-ink text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-50" style="background:radial-gradient(700px 500px at 20% 0%, rgba(20,168,154,0.4), transparent 65%);"></div>
+    <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-8 streak-line"></span>
+          <span class="eyebrow text-mint">Contact</span>
+        </div>
+        <h2 class="section-title text-6xl sm:text-7xl md:text-8xl leading-[0.9]">Ready to<br />play?</h2>
+        <p class="mt-6 text-white/70 text-lg max-w-md leading-relaxed">Book a free trial session this week and feel the LeapStrike difference. No commitment — just great badminton.</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="membership.html" class="btn btn-primary">Join now</a>
+          <a href="mailto:support@leapstrike.club" class="btn btn-ghost">Book free trial</a>
+        </div>
+        <a href="contact.html" class="group inline-flex items-center gap-2 mt-6 font-bold text-mint hover:text-white transition-colors">Contact &amp; directions <span class="transition-transform group-hover:translate-x-1">→</span></a>
+      </div>
+
+      <div class="reveal rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm p-8 sm:p-10">
+        <h3 class="font-display text-2xl tracking-tight mb-6">Find us</h3>
+        <dl class="space-y-6">
+          <div class="flex gap-4">
+            <span class="text-mint mt-1">▸</span>
+            <div>
+              <dt class="text-xs uppercase tracking-widest text-white/50 font-bold">Address</dt>
+              <dd class="mt-1 text-white/90">7550 Ruben Linker Rd NW,<br />Concord, NC 28027</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-mint mt-1">▸</span>
+            <div>
+              <dt class="text-xs uppercase tracking-widest text-white/50 font-bold">Hours</dt>
+              <dd class="mt-1 text-white/90">Mon–Fri 7–10 PM · Sat 8 AM–8 PM · Sun 9 AM–6 PM</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-mint mt-1">▸</span>
+            <div>
+              <dt class="text-xs uppercase tracking-widest text-white/50 font-bold">Email</dt>
+              <dd class="mt-1"><a href="mailto:support@leapstrike.club" class="text-mint hover:text-white transition-colors font-semibold">support@leapstrike.club</a></dd>
+            </div>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-teal-900 text-white/70">
+    <div class="max-w-7xl mx-auto px-6 py-14">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="LeapStrike logo" class="h-10 w-10 object-contain" />
+          <span class="text-white font-display text-xl tracking-wide">LEAPSTRIKE</span>
+        </a>
+        <nav class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold text-white/75">
+          <a href="membership.html" class="hover:text-mint transition-colors">Membership</a>
+          <a href="training.html" class="hover:text-mint transition-colors">Training</a>
+          <a href="facilities.html" class="hover:text-mint transition-colors">Facilities</a>
+          <a href="schedule.html" class="hover:text-mint transition-colors">Schedule</a>
+          <a href="faq.html" class="hover:text-mint transition-colors">FAQ</a>
+          <a href="contact.html" class="hover:text-mint transition-colors">Contact</a>
+        </nav>
+      </div>
+      <div class="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-sm tracking-wide uppercase font-semibold text-white/50">LeapStrike Badminton Club · Concord, NC</p>
+        <p class="text-sm text-white/40">© 2026 LeapStrike · All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>

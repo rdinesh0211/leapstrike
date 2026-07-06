@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facilities — LeapStrike Badminton Club</title>
+  <meta name="description" content="LeapStrike facilities — six doubles and two singles courts, pro shop, lounge and more — plus the club's court rules." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind.config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+
+<body class="font-sans grain">
+
+  <!-- ============ NAV ============ -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-50 scrolled">
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="assets/logo.png" alt="LeapStrike logo" class="h-11 w-11 object-contain drop-shadow" />
+        <span class="text-white font-display text-2xl tracking-wide">LEAPSTRIKE</span>
+      </a>
+      <div class="hidden lg:flex items-center gap-9 text-[0.95rem] font-semibold text-white/85">
+        <a href="membership.html" class="hover:text-mint transition-colors">Membership</a>
+        <a href="training.html" class="hover:text-mint transition-colors">Training</a>
+        <a href="facilities.html" class="text-mint" aria-current="page">Facilities</a>
+        <a href="schedule.html" class="hover:text-mint transition-colors">Schedule</a>
+        <a href="faq.html" class="hover:text-mint transition-colors">FAQ</a>
+        <a href="contact.html" class="hover:text-mint transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="membership.html" class="btn btn-primary hidden sm:inline-flex !py-3 !px-6 text-sm">Join now</a>
+        <button id="menuBtn" aria-label="Open menu" class="lg:hidden text-white p-2">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="lg:hidden hidden bg-teal-900/97 backdrop-blur-md">
+      <div class="px-6 py-6 flex flex-col gap-4 text-white text-lg font-semibold">
+        <a href="membership.html" class="mobile-link">Membership</a>
+        <a href="training.html" class="mobile-link">Training</a>
+        <a href="facilities.html" class="mobile-link text-mint">Facilities</a>
+        <a href="schedule.html" class="mobile-link">Schedule</a>
+        <a href="faq.html" class="mobile-link">FAQ</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="membership.html" class="mobile-link btn btn-primary mt-2 justify-center">Join now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="relative bg-teal-900 text-white overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24">
+    <div class="absolute inset-0 opacity-60" style="background:radial-gradient(700px 480px at 85% 0%, rgba(20,168,154,0.4), transparent 65%), radial-gradient(500px 400px at 5% 100%, rgba(47,211,192,0.16), transparent 70%);"></div>
+    <div class="relative max-w-7xl mx-auto px-6">
+      <nav class="flex items-center gap-2 text-sm font-semibold text-white/50 mb-6">
+        <a href="index.html" class="hover:text-mint transition-colors">Home</a><span>/</span><span class="text-mint">Facilities</span>
+      </nav>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-8 streak-line"></span>
+        <span class="eyebrow text-mint">Facilities</span>
+      </div>
+      <h1 class="section-title text-6xl sm:text-7xl md:text-8xl">Built for the game.</h1>
+      <p class="mt-5 text-white/70 text-lg max-w-2xl leading-relaxed">Six doubles courts, two singles courts, and the amenities to match. A full photo tour is coming soon — for now, here's what's on site and the rules that keep every court in top shape.</p>
+    </div>
+  </section>
+
+  <!-- ============ FACILITIES GRID ============ -->
+  <section class="py-20 md:py-28 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal grid grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="col-span-2 lg:col-span-2 lg:row-span-2 relative rounded-3xl overflow-hidden aspect-[4/3] lg:aspect-auto border border-teal-900/5">
+          <img src="https://placehold.co/900x900/0C3A3B/2FD3C0?text=Main+Hall+%E2%80%94+6+Courts" alt="Placeholder — main hall" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent"></div>
+          <span class="absolute bottom-5 left-5 text-white font-display text-2xl tracking-tight">Main Hall — 6 Courts</span>
+        </div>
+        <div class="relative rounded-3xl overflow-hidden aspect-square border border-teal-900/5">
+          <img src="https://placehold.co/500x500/E9F0EF/0C3A3B?text=Pro+Shop" alt="Placeholder — pro shop" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative rounded-3xl overflow-hidden aspect-square border border-teal-900/5">
+          <img src="https://placehold.co/500x500/E9F0EF/0C3A3B?text=Lounge" alt="Placeholder — lounge" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative rounded-3xl overflow-hidden aspect-square border border-teal-900/5">
+          <img src="https://placehold.co/500x500/E9F0EF/0C3A3B?text=Locker+Rooms" alt="Placeholder — locker rooms" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative rounded-3xl overflow-hidden aspect-square border border-teal-900/5">
+          <img src="https://placehold.co/500x500/E9F0EF/0C3A3B?text=Strength+Studio" alt="Placeholder — strength studio" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <p class="reveal mt-6 text-sm text-ink/45 italic">Placeholder imagery — to be replaced with real facility photos.</p>
+    </div>
+  </section>
+
+  <!-- ============ COURT RULES ============ -->
+  <section class="py-20 md:py-28 bg-ink text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-40" style="background:radial-gradient(600px 400px at 90% 5%, rgba(20,168,154,0.3), transparent 70%);"></div>
+    <div class="relative max-w-5xl mx-auto px-6">
+      <div class="reveal max-w-2xl">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-8 streak-line"></span>
+          <span class="eyebrow text-mint">Court rules</span>
+        </div>
+        <h2 class="section-title text-4xl sm:text-5xl md:text-6xl">Play fair, play safe.</h2>
+        <p class="mt-4 text-white/60 text-lg leading-relaxed">These rules keep courts fast, fair and in great condition for everyone.</p>
+      </div>
+
+      <ol class="mt-12 grid sm:grid-cols-2 gap-x-10 gap-y-8">
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">01</span>
+          <div><h3 class="font-bold text-lg">Check in first</h3><p class="mt-1.5 text-white/65 leading-relaxed">Check in at the front desk before you play.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">02</span>
+          <div><h3 class="font-bold text-lg">Footwear</h3><p class="mt-1.5 text-white/65 leading-relaxed">Non-marking indoor court shoes are required — badminton shoes preferred. Black-sole and street shoes aren't allowed; entry is denied for non-compliance and session fees aren't refunded.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">03</span>
+          <div><h3 class="font-bold text-lg">Account requests</h3><p class="mt-1.5 text-white/65 leading-relaxed">All account requests go through support@leapstrike.club; verbal requests won't be honored.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">04</span>
+          <div><h3 class="font-bold text-lg">No ID sharing</h3><p class="mt-1.5 text-white/65 leading-relaxed">Using another member's ID to enter is fraud. It carries a $200 fine and may lead to permanent termination.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">05</span>
+          <div><h3 class="font-bold text-lg">Court queuing</h3><p class="mt-1.5 text-white/65 leading-relaxed">During member hours, if demand exceeds courts, players are queued in check-in order. See the Open Play policy for how queuing stands work.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">06</span>
+          <div><h3 class="font-bold text-lg">Session end</h3><p class="mt-1.5 text-white/65 leading-relaxed">Vacate the court when your open-play session ends, unless the next session still has open slots.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">07</span>
+          <div><h3 class="font-bold text-lg">Singles play</h3><p class="mt-1.5 text-white/65 leading-relaxed">Play singles on a singles court — or on a doubles court only if no one is waiting for doubles.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">08</span>
+          <div><h3 class="font-bold text-lg">Shuttles</h3><p class="mt-1.5 text-white/65 leading-relaxed">Bring your own shuttles. They're also available to buy at the club.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">09</span>
+          <div><h3 class="font-bold text-lg">Cleanliness</h3><p class="mt-1.5 text-white/65 leading-relaxed">Clean up your trash before you leave the facility.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">10</span>
+          <div><h3 class="font-bold text-lg">Photo &amp; video</h3><p class="mt-1.5 text-white/65 leading-relaxed">LeapStrike retains rights to all photos and video taken on the premises, including CCTV — used for security, live streaming and social media.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">11</span>
+          <div><h3 class="font-bold text-lg">Code of conduct</h3><p class="mt-1.5 text-white/65 leading-relaxed">Treat staff, coaches and fellow players with courtesy. Unsportsmanlike behavior isn't tolerated; we may warn, suspend or terminate membership without refund.</p></div>
+        </li>
+        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+          <span class="font-display text-2xl text-teal-400 shrink-0">12</span>
+          <div><h3 class="font-bold text-lg">Liability waiver</h3><p class="mt-1.5 text-white/65 leading-relaxed">Play carries an inherent risk of injury; you take part voluntarily and at your own risk. A separate waiver may be required at enrollment or check-in.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-teal-900 text-white/70">
+    <div class="max-w-7xl mx-auto px-6 py-14">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="LeapStrike logo" class="h-10 w-10 object-contain" />
+          <span class="text-white font-display text-xl tracking-wide">LEAPSTRIKE</span>
+        </a>
+        <nav class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold text-white/75">
+          <a href="membership.html" class="hover:text-mint transition-colors">Membership</a>
+          <a href="training.html" class="hover:text-mint transition-colors">Training</a>
+          <a href="facilities.html" class="hover:text-mint transition-colors">Facilities</a>
+          <a href="schedule.html" class="hover:text-mint transition-colors">Schedule</a>
+          <a href="faq.html" class="hover:text-mint transition-colors">FAQ</a>
+          <a href="contact.html" class="hover:text-mint transition-colors">Contact</a>
+        </nav>
+      </div>
+      <div class="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-sm tracking-wide uppercase font-semibold text-white/50">LeapStrike Badminton Club · Concord, NC</p>
+        <p class="text-sm text-white/40">© 2026 LeapStrike · All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
