@@ -22,7 +22,7 @@ body { background: #F5F7F7; color: #0F2E2E; -webkit-font-smoothing: antialiased;
    width on wide monitors is filled by a light->teal gradient matched to the photo's
    own left (#F2F2F2) and right (#0096A2) edges, so the side-bands blend seamlessly. */
 .hero-bg {
-  background-image: url('/assets/hero-desktop.png'),
+  background-image: url('hero-desktop.png'),
                     linear-gradient(90deg, #F2F2F2 0%, #E9EFEF 30%, #17A0A8 80%, #0096A2 100%);
   background-size: contain, cover;
   background-position: center, center;
@@ -35,7 +35,7 @@ body { background: #F5F7F7; color: #0F2E2E; -webkit-font-smoothing: antialiased;
      gradient matched to the photo's top (#80B4BA) and bottom (#046F7D) edges that
      blends into the bottom scrim behind the CTAs. */
   .hero-bg {
-    background-image: url('/assets/hero-mobile.png'),
+    background-image: url('hero-mobile.png'),
                       linear-gradient(180deg, #80B4BA 0%, #0A7180 60%, #05606E 100%);
     background-size: contain, cover;
     background-position: top center, center;
