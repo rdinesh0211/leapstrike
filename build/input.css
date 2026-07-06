@@ -23,7 +23,11 @@ body { background: #F5F7F7; color: #0F2E2E; -webkit-font-smoothing: antialiased;
 }
 
 /* Hero text legibility over the photo's brighter regions */
-#top h1 { text-shadow: 0 2px 30px rgba(8,40,40,0.28); }
+/* line-height set here (ID specificity) so it beats .display-hero's 0.86 and the
+   leading-* utilities in the compiled cascade. Mobile gets breathing room; desktop
+   keeps the tighter approved spacing. */
+#top h1 { text-shadow: 0 2px 30px rgba(8,40,40,0.28); line-height: 1.2; }
+@media (min-width: 768px) { #top h1 { line-height: 1.0; } }
 #top .eyebrow, #top p { text-shadow: 0 1px 14px rgba(8,40,40,0.6); }
 
 .display-hero { font-family: 'Anton', sans-serif; line-height: 0.86; letter-spacing: -0.02em; }
