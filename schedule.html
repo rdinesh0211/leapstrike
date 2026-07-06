@@ -6,11 +6,7 @@
   <title>Schedule — LeapStrike Badminton Club</title>
   <meta name="description" content="LeapStrike weekly schedule — open play hours and kids training — plus the full Open Play rules and queuing policy." />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="assets/tailwind.config.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Self-hosted Tailwind build + fonts (no external CDNs) -->
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 
@@ -38,7 +34,7 @@
         </button>
       </div>
     </nav>
-    <div id="mobileMenu" class="lg:hidden hidden bg-teal-900/97 backdrop-blur-md">
+    <div id="mobileMenu" class="lg:hidden hidden bg-teal-900/95 backdrop-blur-md">
       <div class="px-6 py-6 flex flex-col gap-4 text-white text-lg font-semibold">
         <a href="membership.html" class="mobile-link">Membership</a>
         <a href="training.html" class="mobile-link">Training</a>
@@ -114,55 +110,55 @@
       </div>
 
       <ol class="mt-12 grid sm:grid-cols-2 gap-x-10 gap-y-8">
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">01</span>
           <div><h3 class="font-bold text-lg">Queuing stands</h3><p class="mt-1.5 text-white/65 leading-relaxed">The club uses stands to manage court queues. Each stand holds up to 4 rackets and represents one queue. If a stand is full, use the next available one.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">02</span>
           <div><h3 class="font-bold text-lg">Next-up marker</h3><p class="mt-1.5 text-white/65 leading-relaxed">A marker shows which stand is "next available" — that group plays as soon as a court opens.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">03</span>
           <div><h3 class="font-bold text-lg">Waiting for a game to end</h3><p class="mt-1.5 text-white/65 leading-relaxed">Players in queue wait for the current game to finish, then may ask those on court to vacate.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">04</span>
           <div><h3 class="font-bold text-lg">One racket per player</h3><p class="mt-1.5 text-white/65 leading-relaxed">To join a queue, place one racket in a stand — one per player. You can't reserve a spot for someone who isn't present.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">05</span>
           <div><h3 class="font-bold text-lg">No double-queuing</h3><p class="mt-1.5 text-white/65 leading-relaxed">If you're on a court, you can't also have a racket in a stand — you can't play and wait at the same time.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">06</span>
           <div><h3 class="font-bold text-lg">Choosing a stand</h3><p class="mt-1.5 text-white/65 leading-relaxed">Pick any stand up to its 4-racket limit. Players who want to play together can share a stand.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">07</span>
           <div><h3 class="font-bold text-lg">Don't move others' rackets</h3><p class="mt-1.5 text-white/65 leading-relaxed">Never move another player's racket between stands without their consent.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">08</span>
           <div><h3 class="font-bold text-lg">Groups of four</h3><p class="mt-1.5 text-white/65 leading-relaxed">Only complete groups of 4 may take an open court. It's the group's job to have all four ready when their turn comes.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">09</span>
           <div><h3 class="font-bold text-lg">Incomplete groups</h3><p class="mt-1.5 text-white/65 leading-relaxed">A group that isn't complete when its turn arrives forfeits that turn until it has 4 players. It may invite players coming off the court to fill in.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">10</span>
           <div><h3 class="font-bold text-lg">Withdrawing a racket</h3><p class="mt-1.5 text-white/65 leading-relaxed">You may pull your racket from a stand anytime. If it was a full stand, the rest should find a replacement. You can't withdraw once your group is moving onto a court.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">11</span>
           <div><h3 class="font-bold text-lg">Joining a partial stand</h3><p class="mt-1.5 text-white/65 leading-relaxed">Any player may join a stand that currently has 3 or fewer rackets.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">12</span>
           <div><h3 class="font-bold text-lg">Cancellations &amp; refunds</h3><p class="mt-1.5 text-white/65 leading-relaxed">To cancel an Open Play registration and receive a refund, withdraw at least 4 hours in advance.</p></div>
         </li>
-        <li class="reveal flex gap-5 border-t border-white/12 pt-6">
+        <li class="reveal flex gap-5 border-t border-white/10 pt-6">
           <span class="font-display text-2xl text-teal-400 shrink-0">13</span>
           <div><h3 class="font-bold text-lg">Advancing the marker</h3><p class="mt-1.5 text-white/65 leading-relaxed">When a group moves onto a court, the "next available" marker moves to the next-higher stand — or back to stand 1 after the last one.</p></div>
         </li>

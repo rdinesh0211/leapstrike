@@ -6,11 +6,7 @@
   <title>LeapStrike — North Charlotte's Badminton Club</title>
   <meta name="description" content="LeapStrike is North Charlotte's badminton club — six doubles courts, two singles courts, open play, and kids training in Concord, NC." />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="assets/tailwind.config.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Self-hosted Tailwind build + fonts (no external CDNs) -->
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 
@@ -42,7 +38,7 @@
     </nav>
 
     <!-- Mobile menu -->
-    <div id="mobileMenu" class="lg:hidden hidden bg-teal-900/97 backdrop-blur-md">
+    <div id="mobileMenu" class="lg:hidden hidden bg-teal-900/95 backdrop-blur-md">
       <div class="px-6 py-6 flex flex-col gap-4 text-white text-lg font-semibold">
         <a href="membership.html" class="mobile-link">Membership</a>
         <a href="training.html" class="mobile-link">Training</a>
@@ -81,7 +77,7 @@
 
   <!-- ============ STATS BAR ============ -->
   <section class="bg-teal-900 text-white">
-    <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-3 divide-x divide-white/12">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-3 divide-x divide-white/10">
       <div class="text-center px-2">
         <div class="font-display text-4xl sm:text-6xl text-mint">6</div>
         <div class="mt-1 text-xs sm:text-sm font-semibold tracking-wide text-white/70 uppercase">Doubles courts</div>
@@ -206,28 +202,28 @@
       </div>
 
       <div class="mt-14 grid md:grid-cols-2 gap-x-12 gap-y-10">
-        <div class="reveal flex gap-6 border-t border-white/12 pt-8">
+        <div class="reveal flex gap-6 border-t border-white/10 pt-8">
           <span class="font-display text-3xl text-teal-400 shrink-0">01</span>
           <div>
             <h3 class="font-display text-2xl tracking-tight">Foundations <span class="text-white/50 text-lg font-sans font-semibold">· Beginner</span></h3>
             <p class="mt-2 text-white/65 leading-relaxed">Grips, footwork and rally basics in a friendly small-group setting. Eight-week block.</p>
           </div>
         </div>
-        <div class="reveal flex gap-6 border-t border-white/12 pt-8">
+        <div class="reveal flex gap-6 border-t border-white/10 pt-8">
           <span class="font-display text-3xl text-teal-400 shrink-0">02</span>
           <div>
             <h3 class="font-display text-2xl tracking-tight">Junior Academy <span class="text-white/50 text-lg font-sans font-semibold">· Ages 7–16</span></h3>
             <p class="mt-2 text-white/65 leading-relaxed">Age-banded pathway building technique, fitness and match play. After-school and weekends.</p>
           </div>
         </div>
-        <div class="reveal flex gap-6 border-t border-white/12 pt-8">
+        <div class="reveal flex gap-6 border-t border-white/10 pt-8">
           <span class="font-display text-3xl text-teal-400 shrink-0">03</span>
           <div>
             <h3 class="font-display text-2xl tracking-tight">Competitive Squad</h3>
             <p class="mt-2 text-white/65 leading-relaxed">High-intensity drills, tactics and sparring for tournament players. Coach-selected.</p>
           </div>
         </div>
-        <div class="reveal flex gap-6 border-t border-white/12 pt-8">
+        <div class="reveal flex gap-6 border-t border-white/10 pt-8">
           <span class="font-display text-3xl text-teal-400 shrink-0">04</span>
           <div>
             <h3 class="font-display text-2xl tracking-tight">Private 1-on-1</h3>

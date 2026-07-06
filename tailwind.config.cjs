@@ -1,4 +1,7 @@
-tailwind.config = {
+/** Tailwind build config — compiles assets/site.css from build/input.css.
+ *  Scans HTML + site.js so classes toggled in JS are never purged. */
+module.exports = {
+  content: ['./*.html', './assets/*.js'],
   theme: {
     extend: {
       colors: {
